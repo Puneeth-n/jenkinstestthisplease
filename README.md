@@ -18,7 +18,7 @@ However, there are somethings you might want to have for it to work.
 4. Determine your `JENKINS_BUILD_PARAMS` (if any). This can be something like `foo=bar&lorem=ipsum&...`
 5. Generate a **strong** `GITHUB_S2S_SECRET` for your webhook so that [GitHub signs](https://developer.github.com/webhooks/securing/) each event with it.
 6. Setup the [GitHub webhook](https://developer.github.com/webhooks/creating/)
-7. Set all the `CAPITALIZED` variables as environment variables and Deploy to the address setup in the webhook.
+7. Set all the `CAPITALIZED` variables as environment variables (You can also refer to the `docker-compose.yml`) and Deploy to the address setup in the webhook.
 8. Comment on your `PR` something like *"Baby test this please"*, *"Darling test this please"*, *"Jenkins, test this please"* and see your PR's being built.
 
 

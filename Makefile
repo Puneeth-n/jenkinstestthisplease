@@ -1,19 +1,19 @@
 #!/usr/bin/env make
 
 build:
-	@docker build -f ./Dockerfile -t puneethn/jenkinstestthisplease .
+	@docker build -f ./Dockerfile -t jenkinstestthisplease .
 
 develop:
-	@docker run --rm -it -v $(PWD):/opt/ct -w /opt/ct -p 8000:80 puneethn/jenkinstestthisplease:latest bash
+	@docker run --rm -it -v $(PWD):/opt/ttp -w /opt/ttp -p 8000:80 jenkinstestthisplease:latest bash
 
 pull:
 	@docker pull puneethn/jenkinstestthisplease:latest
 
-start: pull
-	@docker run --rm -p 8000:80 puneethn/jenkinstestthisplease:latest
+start: build
+	@docker-compose up
 
 exec:
-	@docker run --rm -it puneethn/jenkinstestthisplease:latest bash
+	@docker run --rm -it jenkinstestthisplease:latest bash
 
 install:
 	@pip install -r requirements.txt
