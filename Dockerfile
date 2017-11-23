@@ -1,6 +1,6 @@
 FROM python:3.6
 
-WORKDIR /opt/ct
+WORKDIR /opt/ttp
 
 EXPOSE 80
 
