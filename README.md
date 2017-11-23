@@ -19,7 +19,8 @@ However, there are somethings you might want to have for it to work.
 5. Generate a **strong** `GITHUB_S2S_SECRET` for your webhook so that [GitHub signs](https://developer.github.com/webhooks/securing/) each event with it.
 6. Setup the [GitHub webhook](https://developer.github.com/webhooks/creating/)
 7. Set all the `CAPITALIZED` variables as environment variables (You can also refer to the `docker-compose.yml`) and Deploy to the address setup in the webhook.
-8. Comment on your `PR` something like *"Baby test this please"*, *"Darling test this please"*, *"Jenkins, test this please"* and see your PR's being built.
+8. goto `http://127.0.0.1/swagger`
+9. Comment on your `PR` something like *"Baby test this please"*, *"Darling test this please"*, *"Jenkins, test this please"* and see your PR's being built.
 
 
 # TODO:
