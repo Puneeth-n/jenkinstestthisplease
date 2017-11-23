@@ -24,5 +24,5 @@ However, there are somethings you might want to have for it to work.
 
 # TODO:
 - Support multiple projects
-- Support whielisting and Blacklisting Users 
-   
+- Support whielisting and Blacklisting Users
+- Fix Swagger spec
