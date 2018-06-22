@@ -7,6 +7,7 @@ pipeline {
           sh 'pwd'
         }
 
+        sh 'printenv | sort'
       }
     }
     stage('two') {
