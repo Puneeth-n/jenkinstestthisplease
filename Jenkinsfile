@@ -4,9 +4,14 @@ pipeline {
     stage('One') {
       steps {
         ws(dir: 'foo') {
-          echo 'hello world'
+          sh 'pwd'
         }
 
+      }
+    }
+    stage('two') {
+      steps {
+        sh 'pwd'
       }
     }
   }
