@@ -1,13 +1,10 @@
 pipeline {
-  agent none
+  agent any
   stages {
     stage('One') {
       steps {
         ws(dir: 'foo') {
-          ws(dir: 'foo') {
-            echo 'hello world'
-          }
-
+          echo 'hello world'
         }
 
       }
